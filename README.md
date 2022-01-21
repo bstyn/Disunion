@@ -1,1 +1,2 @@
-# discord-clone
+#   Disunion (Protokoły sieci Web)
+#   Bartosz Styn
