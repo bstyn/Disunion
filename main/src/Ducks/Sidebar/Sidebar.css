@@ -1,0 +1,83 @@
+.sidebar{
+    display:flex;
+    background-color: #2C2F33;
+    flex-direction: column;
+    height: 100vh;
+    width: 240px;
+    font-family: 'koblenz-serial-bold', sans-serif;
+    margin:0px;
+}
+.sidebar-current-server-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #2C2F33;
+    color:white;
+    border-bottom: 1px solid #25282c;
+    font-size: 12px;
+}
+
+.sidebar-channels{
+    flex: 1;
+}
+
+.sidebar-channels-header{
+    display:flex;   
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 10px;
+    color:gray;
+    height: 30px;
+}
+
+.sidebar-channels-header-top{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 0px;
+}
+
+.sidebar-addServer:hover{
+    cursor: pointer;
+    color:white;
+}
+
+.sidebar-profile{
+    display:flex;  
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    background-color: rgb(41,43,47);
+    padding:10px;   
+    border-top: 1px solid #41444b;
+    height: 35px;
+}
+
+.sidebar-profile-info{
+    flex:1;
+    padding-left: 10px;
+}
+
+.sidebar-profile-info > h3{
+    font-family: 'koblenz-serial-bold', sans-serif;
+    padding-bottom: 3px;
+    font-size: 13px;
+    color:white;
+}
+.sidebar-profile-info > p{
+    font-family: 'koblenz-serial-bold', sans-serif;
+    font-size: 11px;
+}
+
+.sidebar-profile-icons > .MuiSvgIcon-root {
+    font-size: 23px;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+
+
+
+
