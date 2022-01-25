@@ -1,0 +1,10 @@
+.register-back-button{
+    background: transparent;
+    border:none;
+    color: #7289da;
+    justify-content: flex-start;
+    width: 40px;
+}
+.register-back-button:hover{
+    cursor: pointer;
+}

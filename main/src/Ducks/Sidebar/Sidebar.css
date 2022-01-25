@@ -4,7 +4,6 @@
     flex-direction: column;
     height: 100vh;
     width: 240px;
-    font-family: 'koblenz-serial-bold', sans-serif;
     margin:0px;
 }
 .sidebar-current-server-header{
@@ -61,13 +60,11 @@
 }
 
 .sidebar-profile-info > h3{
-    font-family: 'koblenz-serial-bold', sans-serif;
-    padding-bottom: 3px;
-    font-size: 13px;
+    font-size: 14px;
     color:white;
+    margin-top:5px;
 }
 .sidebar-profile-info > p{
-    font-family: 'koblenz-serial-bold', sans-serif;
     font-size: 11px;
 }
 

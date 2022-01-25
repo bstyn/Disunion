@@ -37,7 +37,7 @@ const Sidebar = () => {
             <div className="sidebar-profile">
                 <Avatar sx={{ fontsize: 5 }} />
                 <div className="sidebar-profile-info"> 
-                    <h3>Huharz</h3>
+                    <h3>Bati</h3>
                     <p>#2137</p>
                 </div>
                 <div className="sidebar-profile-icons">
