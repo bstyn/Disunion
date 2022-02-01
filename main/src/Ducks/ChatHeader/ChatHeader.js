@@ -7,13 +7,13 @@ import SendRoundedIcon from '@material-ui/icons/SendRounded'
 import HelpRoundedIcon from '@material-ui/icons/HelpRounded'
 import './ChatHeader.css'
 
-function ChatHeader() {
+function ChatHeader({channelName}) {
   return (
       <div className="chat-header">
             <div className="chat-header-left">
                 <h3>
                     <span className='chat-header-hash'>#</span>
-                    ogólny
+                    {channelName}
                 </h3>
             </div>
             <div className="chat-header-right">

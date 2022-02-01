@@ -5,10 +5,13 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Formik , Form, Field} from 'formik'
 import {url} from '../Url'
 import axios from 'axios'
+import { login } from "./userSlice"
+import { useDispatch } from 'react-redux'
 
 
 function Login() {
     const [passwordShown, setPasswordShown] = useState(false);
+    const dispatch = useDispatch()
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
       };
@@ -22,7 +25,18 @@ function Login() {
                     email: '',
                     password: ''
                 }}
-                onSubmit={values => {axios.post(`${url}/users/login`,values).then(res => console.log(res.data)).catch(error => alert(error.response.data.error))}}
+                onSubmit={values => {
+                    axios.post(`${url}/users/login`,values).then(res => {if(res.data.message === "Valid password"){
+                        dispatch(
+                            login({
+                                id: res.data.id,
+                                email: values.email,
+                                url: res.data.url,
+                                nickname: res.data.nickname
+                            }))
+                    }}).catch(error => alert(error.response.data.error))    
+                    
+                }}
                 >
                     <Form>
                         <Field name='email' type='text' placeholder='E-mail'></Field>

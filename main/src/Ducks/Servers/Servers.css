@@ -1,0 +1,35 @@
+.servers {
+    display:flex;
+    flex-direction: column;
+    background-color: #1e2124;
+    width: 72px;
+    gap: 10px;
+    
+}
+.server-list{
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 100%;
+    align-content: center;
+}
+.server {
+    display: flex;
+    background-color: #36393e;
+    width: 47px;
+    height: 47px;
+    border-radius: 100%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.server:hover{
+    cursor: pointer;
+}
+.server > p {
+    color:white;
+}
+.server > .MuiSvgIcon-root{
+    color: rgb(6, 179, 0);
+}

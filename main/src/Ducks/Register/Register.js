@@ -5,8 +5,11 @@ import './Register.css'
 import { Formik , Form, Field} from 'formik'
 import axios from 'axios'
 import { url } from "../Url"
+import { useHistory } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 
 function Register() {
+    const history = useHistory()
     const [passwordShown, setPasswordShown] = useState(false);
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
@@ -18,11 +21,13 @@ function Register() {
                 <h5>ACCOUNT INFORMATION</h5>
                 <Formik
                 initialValues={{
+                    id: uuidv4(),
                     email: '',
+                    url: '',
                     nickname: '',
                     password: ''
                 }}
-                onSubmit={values => {axios.post(`${url}/users/signup`,values).then(res => console.log(res.data)).catch(error => alert(error.response.data.error))}}
+                onSubmit={values => {axios.post(`${url}/users/signup`,values).then(res => {if(res.data.message === "Created"){history.push("/login");alert("Successfully Created an Account")}}).catch(error => alert(error.response.data.error))}}
                 >
                     <Form>
                         <Field name='email' type='text' placeholder='E-mail'></Field>

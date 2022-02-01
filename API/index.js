@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const users = require('./routes/users.js');
+const servers = require('./routes/servers.js')
+const channels = require('./routes/channels.js')
+const messages = require('./routes/messages.js')
 
 app.use(express.json());
 
@@ -15,6 +18,9 @@ app.use(function (req, res, next) {
 });
 
 app.use('/users', users);
+app.use('/servers', servers);
+app.use('/channels', channels);
+app.use('/messages', messages);
 
 
 require('dotenv').config();

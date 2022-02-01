@@ -1,10 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
-import userReducer from '../features/userSlice'
-import appReducer from '../features/appSlice'
+import userReducer from '../Ducks/Login/userSlice'
+import appReducer from '../Ducks/Sidebar/appSlice'
+import serverReducer from '../Ducks/Servers/serverSlice'
+import channelReducer from '../Ducks/Sidebar/channelSlice'
 
 export const store = configureStore({
   reducer: {
     user: userReducer,
-    app: appReducer
+    app: appReducer,
+    server: serverReducer,
+    channel: channelReducer,
   },
 });

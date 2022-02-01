@@ -5,12 +5,12 @@ import GifIcon from '@material-ui/icons/Gif'
 import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions'
 import './ChatInput.css'
 
-function ChatInput() {
+function ChatInput({channelName}) {
   return (
     <div className='chat-input'>
         <AddCircleIcon className='add-circle' />
         <form>
-            <input type="text" placeholder='Message #Channel' />
+            <input type="text" placeholder={`Message #${channelName}`} />
             <button className='chat-input-button'type='submit'>Send Message</button>
         </form>
         <div className="chat-input-icons">

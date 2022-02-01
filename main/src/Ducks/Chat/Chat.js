@@ -3,14 +3,23 @@ import ChatHeader from '../ChatHeader/ChatHeader';
 import './Chat.css'
 import ChatMessages from '../ChatMessages/ChatMessages';
 import ChatInput from '../ChatInput/ChatInput';
+import { useSelector } from 'react-redux';
+import { selectChannelName } from '../Sidebar/appSlice';
 
 function Chat() {
+    const channelName = useSelector(selectChannelName)
     return (
+        
         <div className='chat'>
-            <ChatHeader />
+            {channelName ?
+            <>
+            <ChatHeader channelName={channelName}/>
             <ChatMessages />
-            <ChatInput />
+            <ChatInput  channelName={channelName}/>
+            </>
+            :<></>}
         </div>
+
     );
 }
 

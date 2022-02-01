@@ -53,6 +53,9 @@
     border-top: 1px solid #41444b;
     height: 35px;
 }
+.sidebar-profile > .avatar:hover{
+    cursor: pointer;
+}
 
 .sidebar-profile-info{
     flex:1;
