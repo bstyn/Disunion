@@ -2,7 +2,8 @@ const { Schema, model } = require('mongoose');
 
 const serverSchema = new Schema({
     id: String,
-    Name: String,
+    name: String,
+    users: Array,
 });
 
 module.exports = model('Server', serverSchema);

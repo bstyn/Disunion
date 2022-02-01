@@ -2,7 +2,8 @@ const { Schema, model } = require('mongoose');
 
 const channelSchema = new Schema({
     id: String,
-    name: String,
+    server_id: String,
+    channelName: String,
 });
 
 module.exports = model('Channel', channelSchema);

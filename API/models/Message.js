@@ -2,7 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const messageSchema = new Schema({
     id: String,
-    message: String,
+    channelId: String,
+    text: String,
+    username: String,
+    url: String,
     timestamp: Date,
 });
 

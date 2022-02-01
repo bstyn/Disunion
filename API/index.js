@@ -17,8 +17,8 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use('/users', users);
 app.use('/servers', servers);
+app.use('/users', users);
 app.use('/channels', channels);
 app.use('/messages', messages);
 
