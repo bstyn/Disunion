@@ -76,7 +76,9 @@
     margin-top: 5px;
     padding: 3px;
 }
-
+.setting:hover{
+    cursor:pointer;
+}
 
 
 

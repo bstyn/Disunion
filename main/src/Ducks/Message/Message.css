@@ -1,14 +1,30 @@
 .message{
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    padding-left:20px;
     color:white;
 }
 .message-info{
-    margin-left: 15px;
+    display:flex;
+    justify-content: space-between;
 }
 .message-timestamp{
     color:gray;
     margin-left: 20px;
     font-size: x-small;
+}
+.message-info > h4 {
+    margin-left: 15px;
+}
+.message-info > h4 > p {
+    font-size:14px;
+}
+.message-delete{
+    overflow: hidden;
+    cursor: pointer;
+}
+.buttons{
+    display:flex;
+    color: rgb(116, 115, 115)
 }

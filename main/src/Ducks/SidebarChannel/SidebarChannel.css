@@ -12,9 +12,22 @@
     color:gray;
     font-size: 16px;
     font-family: 'koblenz-serial-bold', sans-serif;
+    flex: 1;
     
 }
 .sidebarchannel-hash{
     font-size: 23px;
     padding-right: 5px;
+}
+.sidebarchannel{
+    display:flex;
+    justify-content: space-between;
+}
+.buttons:hover{
+    background-color: #3a3d42;
+}
+
+.message-delete:hover{
+    cursor: pointer;
+    color:white;
 }

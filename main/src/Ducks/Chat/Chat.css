@@ -4,3 +4,109 @@
     flex: 1;
     background-color: #363a3f;
 }
+
+.chat-header{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    align-items: center;
+    padding: 4px;
+    border-bottom: 1px solid #25282c;
+}
+
+.chat-header-hash{
+    color: gray;
+    font-size: 30px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.chat-header-left{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.chat-header-left > h3{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+.chat-header-right{
+    display: flex;
+    align-items:center;
+    flex: 0.25;
+    justify-content: space-between;
+}
+
+.chat-header-right > .MuiSvgIcon-root{
+    padding: 5px;
+    cursor: pointer;
+}
+.chat-header-right > .MuiSvgIcon-root:hover{
+    color:white;
+}
+.chat-header-search{
+    display: flex;
+    align-items: center;
+    color: gray;
+    background-color: #2f3135;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.chat-header-search > input{
+    background: transparent;
+    outline-width: 0;
+    color: white;
+    border: none;
+}
+.chat-input{
+    display: flex;
+    color: lightgray;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    border-radius: 8px;
+    margin: 15px;
+    margin-bottom: 25px;
+    background-color: #474b53;
+}
+
+.chat-input > form > input {
+    padding: 0px;
+    background: transparent;
+    border: none;
+    outline-width: 0;
+    color: white;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-bottom: 3px;
+}
+.add-circle{
+    padding-left: 10px;
+}
+
+.chat-input > form  {
+    flex: 1;
+}
+
+.chat-input-button{
+    display: none;
+}
+
+.chat-input-icons{
+    display: flex;
+    gap:5px;
+    padding-right: 10px;
+}
+.message-left{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.chat-messages {
+    flex: 1;
+    overflow: auto;
+    max-height: 88vh;
+}

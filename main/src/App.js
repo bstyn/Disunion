@@ -13,8 +13,9 @@ import {
 } from "react-router-dom";
 import Register from './Ducks/Register/Register';
 import Servers from './Ducks/Servers/Servers';
+import ConnectMqtt from './ConnectMqtt';
 
-
+ConnectMqtt()
 
 function App() {
   const user = useSelector(selectUser)
